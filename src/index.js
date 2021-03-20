@@ -12,10 +12,32 @@ $("button").click(function () {
   
   // console.log(words);
   for (let word of words) {
-    if (word[0] === "a" || "e" || "i" || "o" || "u") {
+    firstLetter = word[0];
+    firstLetter = firstLetter.toLowerCase();
+    console.log(word);
+    console.log(word[0]);
+    
+    if (firstLetter[0] === "a") {
       word = word + "ay";
       result = result + word + " ";
-    } else {
+    }
+    else if (firstLetter[0] === "e") {
+      word = word + "ay";
+      result = result + word + " ";
+    }
+    else if (firstLetter[0] === "i") {
+      word = word + "ay";
+      result = result + word + " ";
+    }
+    else if (firstLetter[0] === "o") {
+      word = word + "ay";
+      result = result + word + " ";
+    }
+    else if (firstLetter[0] === "u") {
+      word = word + "ay";
+      result = result + word + " ";
+    }
+    else{
       firstLetter = word.slice(0, 1);
       word = word.slice(1);
       word = word + firstLetter;
@@ -23,6 +45,7 @@ $("button").click(function () {
       result = result + word + " ";
     }
   }
+  //ovelay ookiescay
   $(".output").html(`<h3> ${result} </h3>`);
 });
 
