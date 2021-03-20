@@ -25,6 +25,7 @@ $("button").click(function () {
 function add(theWord) {
   theWord = theWord + "ay";
   result = result + theWord + " ";
+  console.log(theWord);
 }
 
 // RULES FOR PIGLATIN
